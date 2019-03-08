@@ -1,0 +1,196 @@
+
+/* шрифты */
+@import url('fonts.css');
+
+
+.body {
+    margin: auto;    
+    width: 1020px;
+    font-family: 'Lato-Regular', 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+
+/* nav */
+
+ul.menu {
+    height: 63px;    
+    margin: auto;
+    /* background-color: #323232; */
+    background-color: #323232; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu::after {
+    content: '';
+    width: 0;
+	height: 0;
+	border-left: 45px solid transparent;
+	border-right: 45px solid transparent;
+    border-top: 26px solid #323232;
+    position: absolute;
+    left: 50%;
+    top: 63px;
+    transform: translateX(-50%);
+}
+
+li {
+    margin-right: 25px;       
+    outline: 1px solid white;
+    /* margin: 5px 32px 0 39px; */
+    /* display: inline-block;
+    text-align: justify; */
+}
+
+li:nth-last-child(1) {
+    margin-right: 0;
+}
+
+li a {
+    font-family: 'Lato-Bold', 'Arial', sans-serif;;
+    font-size: 10px;
+    color: rgb(255, 255, 255);    
+    text-decoration: none;
+}
+
+.item a {    
+    color: rgba(46, 179, 152, 255);
+}
+
+.triangle {
+    background-color: yellow;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    /* margin: 15px 0 0 5px; */
+}
+
+
+
+
+
+/* hex */
+.hexagon-cotainer {     
+    height: 721px;
+    background-color: grey; 
+    margin: auto;
+    padding: 40px;
+}
+
+.hexagon {
+    width: 180px;
+    height: 210px;    
+    margin: 5px;
+    transform: rotate(120deg);
+    overflow: hidden;
+    visibility: hidden;
+    display: inline-block;
+    /* transition: transform 1s ease-in; */
+}
+
+.hex-layer-1 {
+    visibility: hidden;
+    width: 100%;
+    height: 100%;    
+    transform: rotate(-60deg);
+    overflow: hidden;
+}
+
+.hex-layer-2 {
+    width: 100%;
+    height: 100%;
+    background: #cccc;
+    transform: rotate(120deg);
+    overflow: hidden;
+    visibility: visible;
+    background-image: url('../assets/images/Portfolio/Layer33.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+/* .hexagon:hover {
+    transform: rotate(-240deg);
+    transition: transform 1s ease-in;
+} */
+
+.row-translate .hexagon {    
+    position: relative;
+    top: -55px;
+    left: 96px;
+}
+
+.row-native:not(:first-child) {
+    margin-top: -110px;
+}
+
+.row {
+    /* убрать */     
+    min-width: 600px;
+}
+
+
+/* section info */
+
+.info {
+    height: 341px;
+    background-color: pink; 
+}
+
+.subtitle span {
+    width: 50px;
+    margin: 10px;
+    padding: 0 20px 0 40px;
+    border: 1px solid red;
+    background: url('../assets/images/cat.jpg') no-repeat;
+    display: inline-block;
+    overflow: hidden;
+    background: rgb(100, 100, 100, 0);
+}
+
+.subtitle span:hover {
+    width: 60px;    
+    background: url('../assets/images/cat.jpg') no-repeat;
+    
+}
+
+.image {
+    width: 200px;
+    position: relative;
+    left: 1px;
+    top: 1px;
+}
+
+
+input:invalid {
+    border: 2px solid red;
+}
+
+
+/* footer */
+
+.contact-form {
+    height: 564px;
+    background-color: green; 
+}
+
+.button-submit {
+    background: green;
+}
+
+.article {
+    font-size: 2em;
+}
+
+.article .subtitle {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    color: red;    
+}
+
+.copyright {    
+    height: 63px;
+    background-color: burlywood; 
+}
