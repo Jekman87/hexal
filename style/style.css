@@ -8,23 +8,24 @@
     width: 1020px;
     font-family: 'Lato-Regular', 'Arial', sans-serif;
     font-size: 16px;
+    background-color: #ffffff; 
 }
 
 
 /* nav */
 
-ul.menu {
-    height: 63px;    
-    margin: auto;
-    /* background-color: #323232; */
-    background-color: #323232; 
+.navigation {
+    height: 63px; 
+    background-color: #323232;   
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: relative;   
+    box-sizing: border-box;
+    padding-top: 10px; 
 }
 
-.menu::after {
+.navigation::after {
     content: '';
     width: 0;
 	height: 0;
@@ -35,44 +36,77 @@ ul.menu {
     left: 50%;
     top: 63px;
     transform: translateX(-50%);
+    
 }
 
-li {
-    margin-right: 25px;       
-    outline: 1px solid white;
-    /* margin: 5px 32px 0 39px; */
-    /* display: inline-block;
-    text-align: justify; */
+.left-menu, .right-menu {
+    width: 180px;
+    display: flex; 
+    
 }
 
-li:nth-last-child(1) {
-    margin-right: 0;
+.left-menu {    
+    justify-content: flex-end;
 }
 
-li a {
+.right-menu {    
+    justify-content: flex-start;
+}
+
+.left-menu a {
+    margin-right: 25px;
+}
+
+.right-menu a {
+    margin-left: 25px;
+}
+
+.navigation a {
     font-family: 'Lato-Bold', 'Arial', sans-serif;;
     font-size: 10px;
     color: rgb(255, 255, 255);    
     text-decoration: none;
+    position: relative;
 }
 
-.item a {    
-    color: rgba(46, 179, 152, 255);
+a.item {
+    color: rgb(46, 179, 152);
 }
 
-.triangle {
-    background-color: yellow;
+.triangle {    
     width: 90px;
     display: flex;
-    justify-content: center;
-    /* margin: 15px 0 0 5px; */
+    justify-content: center;    
 }
 
-
+.navigation a:first-child::after {
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 5px;
+    right: -13px;
+    pointer-events: none;
+}
 
 
 
 /* hex */
+
+.hexagon-cotainer {     
+    height: 721px;    
+    outline: 1px solid black;
+    box-sizing: border-box;
+    padding-top: 90px;
+}
+
+
+
+  
+
+
+/* 
 .hexagon-cotainer {     
     height: 721px;
     background-color: grey; 
@@ -88,7 +122,7 @@ li a {
     overflow: hidden;
     visibility: hidden;
     display: inline-block;
-    /* transition: transform 1s ease-in; */
+    transition: transform 1s ease-in;
 }
 
 .hex-layer-1 {
@@ -111,10 +145,10 @@ li a {
     background-position: 50%;
 }
 
-/* .hexagon:hover {
+.hexagon:hover {
     transform: rotate(-240deg);
     transition: transform 1s ease-in;
-} */
+}
 
 .row-translate .hexagon {    
     position: relative;
@@ -127,9 +161,11 @@ li a {
 }
 
 .row {
-    /* убрать */     
+    убрать    
     min-width: 600px;
-}
+} */
+
+
 
 
 /* section info */
