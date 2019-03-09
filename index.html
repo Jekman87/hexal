@@ -155,12 +155,12 @@
 						elit odio rhoncus turpis, ac dictum libero elit vel metus. Morbi egestas sit amet velit eget venenatis. 
 						Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna</p>
 					<div class="social">
-						<a class="ifacebook" href="#"><span class="icon-facebook-1"></span></a>
-						<a class="itwitter" href="#"><span class="icon-twitter"></span></a>
-						<a class="igplus" href="#"><span class="icon-gplus"></span></a>
-						<a class="ipinterest" href="#"><span class="icon-pinterest"></span></a>
-						<a class="ilinkedin" href="#"><span class="icon-linkedin"></span></a>
-						<a class="idribbble" href="#"><span class="icon-dribbble"></span></a>
+						<a class="ifacebook" href="#"><i class="icon-facebook-1"></i></a>
+						<a class="itwitter" href="#"><i class="icon-twitter"></i></a>
+						<a class="igplus" href="#"><i class="icon-gplus"></i></a>
+						<a class="ipinterest" href="#"><i class="icon-pinterest"></i></a>
+						<a class="ilinkedin" href="#"><i class="icon-linkedin"></i></a>
+						<a class="idribbble" href="#"><i class="icon-dribbble"></i></a>
 					</div>
 				</div>				
 			</article>
@@ -169,19 +169,36 @@
 	<footer>
 		<section class="contact-form">
 			<form action="#" class="in-touch-form">
-				<fieldset>
-					<legend>Get in Touch</legend>
-					<input class="input-text" type="text" placeholder="Name" required>
-					<input type="email" placeholder="Email" required>
-					<input type="password">
-					<textarea name="" id="" cols="30" rows="10"></textarea>                    
+				<fieldset class="fieldset">
+					<legend><h2>Get in Touch</h2></legend>
+					<h3>In order to get in touch use the contact form below:</h3>	
+					<input class="input-text" type="text" name="name" placeholder="Name (Required)" required>
+					<input class="input-text" type="email" name="email" placeholder="Email (Required)" required>
+					<input class="input-text" type="text" name="subject" placeholder="Subject">					
+					<textarea class="input-text textarea" name="message" placeholder="Write your message here..."></textarea>                    
+					<button class="button-submit" type="submit">SEND</button>
 				</fieldset>
-				<button class="button-submit" type="submit">send</button>
 			</form>
-
-			<div></div>
+			<div class="contact-wrap">
+				<p><span class="black">Quisque Hendrerit:</span> purus dapi-bus, ornare nibh vitae, 
+					viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. 
+					Nulla sed nunc et tortor luctus faucibus morbi vitae.</p>
+					<ul class="contact-list">
+						<li class="contact-list__item">
+							<span class="contact-list__icon"><i class="icon-location"></i></span>
+							<span>Elm St. 14/05 Lost City</span>
+						</li>
+						<li class="contact-list__item">
+							<span class="contact-list__icon"><i class="icon-phone"></i></span>
+							<a href="tel:+35283318635">+ 3528 331 86 35</a>
+						</li>
+						<li class="contact-list__item">
+							<span class="contact-list__icon"><i class="icon-mail"></i></span>
+							<a href="mailto:info@hexalcorp.com">info@hexalcorp.com</a>
+						</li>
+					</ul>
+			</div>
 		</section>
-
 		<div class="copyright"><p>© Copyright 2013 by PSDchat</p></div>
 	</footer>
 	</div>

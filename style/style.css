@@ -15,7 +15,8 @@
 h2 {
   font-family: "MavenPro-Regular", "Arial", sans-serif;
   font-size: 30px;  
-  color: rgb(215, 252, 245);  
+  color: rgb(215, 252, 245); 
+  text-align: justify; 
 }
 
 h3 {
@@ -23,13 +24,14 @@ h3 {
   font-size: 18px;
   line-height: 20px;  
   color: rgb(32, 129, 109);
+  text-align: justify;
 }
 
 p {
-  margin-top: 12px;
   font-size: 12px;
   line-height: 22px;
   color: rgb(215, 252, 245);
+  text-align: justify;
 }
 
 
@@ -87,13 +89,12 @@ p {
 }
 
 .navigation a  {
-  
-
   font-size: 10px;
   font-family: "Lato-Bold", "Arial", sans-serif;
   color: rgb(255, 255, 255);
-  text-decoration: none;;
+  text-decoration: none;
   letter-spacing: -0.02em;
+  text-align: justify;
 }
 
 .navigation a:hover {
@@ -284,6 +285,10 @@ p {
   position: relative;
 }
 
+.resume p {
+  margin-top: 12px;
+}
+
 .social {
   width: 150px;
   height: 24px;  
@@ -359,7 +364,6 @@ p {
   color: #fff;    
 }
 
-
 .article::before, .article::after {
   content: "";
   position: absolute;
@@ -379,57 +383,151 @@ p {
 }
 
 
-
-
-
-/* .subtitle span {
-  display: inline-block;
-  width: 50px;
-  margin: 10px;
-  padding: 0 20px 0 40px;
-  overflow: hidden;
-
-  background: url("../assets/images/cat.jpg") no-repeat;
-  background: rgb(100, 100, 100, 0);
-  border: 1px solid red;
-}
-
-.subtitle span:hover {
-  width: 60px;
-
-  background: url("../assets/images/cat.jpg") no-repeat;
-}
-
-.image {
-  position: relative;
-  top: 1px;
-  left: 1px;
-
-  width: 200px;
-} */
-
-
-input:invalid {
-  border: 2px solid red;
-}
-
-
 /* footer */
+
+footer {
+  position: relative;
+}
 
 .contact-form {
   height: 564px;
-
-  background-color: blue;
+  background-color: #323232;
+  display: flex;  
+  padding: 64px 120px 65px;
+  box-sizing: border-box;
 }
 
+.fieldset {
+  display: flex; 
+  position: relative; 
+}
+
+.fieldset h2 {
+  color: rgb(224, 224, 224);
+}
+
+.fieldset h3 {
+  color: rgb(190, 190, 190);
+  margin-bottom: 20px;
+}
+
+.input-text {
+  width: 580px;
+  height: 38px;
+  margin-top: 16px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #454545;
+  padding: 11px 14px;
+  font-family: "Lato-Regular", "Arial", sans-serif;
+  font-size: 11px;
+}
+
+.input-text::-webkit-input-placeholder {color:#bebebe;}
+.input-text::-moz-placeholder          {color:#bebebe;}/* Firefox 19+ */
+.input-text:-moz-placeholder           {color:#bebebe;}/* Firefox 18- */
+.input-text:-ms-input-placeholder      {color:#bebebe;}
+
+.textarea {
+  height: 150px;
+}
+
+
 .button-submit {
-  background: green;
+  font-family: "Lato-Bold", "Arial", sans-serif;
+  font-size: 11px;
+  color: rgb(215, 252, 245);
+  background: #2eb398;
+  border: none;
+  padding: 12px 30px;
+  margin-top: 16px;
+  position: absolute;
+  right: 0;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+.contact-form::before, .contact-form::after {
+  content: "";
+  position: absolute;
+  background-color: #2b2b2b;
+  width: 960px;
+  height: 1px;  
+  left: 30px;
+}
+
+.contact-form::before {
+  top: 13px;
+}
+
+.contact-form::after {
+  bottom: 54px;
+}
+
+.contact-wrap {
+  width: 180px;
+  margin-left: 20px;
+}
+
+.contact-list {
+  list-style: none;
+}
+
+.contact-list__item {
+  position: relative;
+  padding-left: 23px;
+  font-family: "Lato-Bold", "Arial", sans-serif;
+  font-size: 12px;
+  color: #bebebe;
+  margin-bottom: 9px;  
+}
+
+.contact-list__item a {
+  color: #bebebe;
+  text-decoration: none;
+}
+
+.contact-list__item a:hover {
+  color: rgb(46, 179, 152); 
+}
+
+.contact-list__icon {
+  position: absolute;
+  left: -3px;
+  color: #2eb398;
+}
+
+
+
+.contact-wrap p {
+  margin-top: 64px;
+  margin-bottom: 36px; 
+  color: #bebebe;
+}
+
+.contact-wrap .black {
+  font-family: "Lato-Black", "Arial", sans-serif;
+  color: #e0e0e0;
+  text-align: justify;
 }
 
 
 
 .copyright {
-  height: 63px;
-
-  background-color: burlywood;
+  height: 43px;
+  background-color: #222222;
+  
 }
+.copyright p {
+  display: inline-block;
+  font-family: "MavenPro-Regular", "Arial", sans-serif;
+  font-size: 12px;
+  color: rgb(69, 69, 69);
+  text-align: justify;
+  margin-left: 39px;
+  margin-top: 10px;
+  letter-spacing: -0.02em;
+}
+
