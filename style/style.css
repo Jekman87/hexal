@@ -12,6 +12,26 @@
   background-color: #ffffff;
 }
 
+h2 {
+  font-family: "MavenPro-Regular", "Arial", sans-serif;
+  font-size: 30px;  
+  color: rgb(215, 252, 245);  
+}
+
+h3 {
+  font-family: "MavenPro-Regular", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 20px;  
+  color: rgb(32, 129, 109);
+}
+
+p {
+  margin-top: 12px;
+  font-size: 12px;
+  line-height: 22px;
+  color: rgb(215, 252, 245);
+}
+
 
 /* nav */
 
@@ -47,6 +67,7 @@
 .right-menu {
   display: flex;
   width: 180px;
+  position: relative;
 }
 
 .left-menu {
@@ -65,8 +86,8 @@
   margin-left: 25px;
 }
 
-.navigation a {
-  position: relative;
+.navigation a  {
+  
 
   font-size: 10px;
   font-family: "Lato-Bold", "Arial", sans-serif;
@@ -75,7 +96,7 @@
   letter-spacing: -0.02em;
 }
 
-.navigation a.current {
+.navigation a:hover {
   color: rgb(46, 179, 152);
 }
 
@@ -83,20 +104,25 @@
   display: flex;
   justify-content: center;
   width: 90px;
+  margin-top: 4px;
 }
 
-.navigation a:first-child::after {
+.left-menu::before, .right-menu::before {
   content: "";
   position: absolute;
-  top: 5px;
-  right: -13px;
-
   width: 2px;
   height: 2px;
-
+  top: 4px;
+  border-radius: 50%;
   background-color: white;
+}
 
-  pointer-events: none;
+.left-menu::before {  
+  right: 71px;
+}
+
+.right-menu::before {
+  left: 62px;
 }
 
 .left-menu::after, .right-menu::after {
@@ -105,15 +131,15 @@
   background-color: #e4e9eb;
   width: 410px;
   height: 1px;
-  bottom: -12px;  
+  bottom: -33px;  
 }
 
 .left-menu::after {  
-  left: 30px;
+  right: 25px;
 }
 
 .right-menu::after {  
-  right: 30px;
+  left: 25px;
 }
 
 
@@ -124,18 +150,14 @@
 .hexagon-cotainer {
   box-sizing: border-box;
   height: 721px;
-  padding: 80px 11px 0;
-  position: relative;
-  outline: 1px solid black;
-  /* display: flex;
-  flex-wrap: wrap; */
+  padding: 80px 12px 0;
+  position: relative;  
 }
 
 .hexagon {
   display: inline-block;
   width: 180px;
-  height: 210px;
-  /* margin: 8.4px; */
+  height: 210px;  
   margin: 0.52em;
   margin-bottom: -53px;
   overflow: hidden;
@@ -144,11 +166,6 @@
   visibility: hidden;
   /* transition: transform 1s ease-in; */
 }
-
-/* .hexagon:nth-child(9n+1) {
-  margin-left: 109px;
-} */
-
 
 .hex-layer-1 {
   width: 100%;
@@ -174,7 +191,7 @@
   width: 1px;
   height: 104px;
   background-color: #e4e9eb;  
-  margin: 0 9px 0 88px;  
+  margin: 0 9px 0 86px;  
 }
 
 .sep-right {  
@@ -240,11 +257,132 @@
 
 .info {
   height: 341px;
-
-  background-color: pink;
+  background-color: #2eb398;
 }
 
-.subtitle span {
+.article {
+  width: 780px;  
+  margin: 0 auto;
+  padding: 65px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.wrapper {
+  height: 210px; 
+}
+
+.wrapper .hexagon {
+  margin: 0; 
+}
+
+.resume {
+  width: 582px;
+  height: 210px;
+  position: relative;
+}
+
+.social {
+  width: 150px;
+  height: 24px;  
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+.social a {
+  width: 25px;
+  height: 24px;
+  display: inline-block;
+  font-size: 12px;  
+  color: #02ac95; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ifacebook {
+  background-color: #a4dbd4;
+     
+}
+.ifacebook:hover {
+  background-color: #35609f;
+  color: #fff;    
+}
+
+.itwitter {
+  background-color: #6ccbbe;
+     
+}
+.itwitter:hover {
+  background-color: #2daae1;
+  color: #fff;    
+}
+
+.igplus {
+  background-color: #7ed0c5;
+     
+}
+.igplus:hover {
+  background-color: #db5542;
+  color: #fff;    
+}
+
+.ipinterest {
+  background-color: #acddd7;
+     
+}
+.ipinterest:hover {
+  background-color: #cb2027;
+  color: #fff;    
+}
+
+.ilinkedin {
+  background-color: #abddd6;
+     
+}
+.ilinkedin:hover {
+  background-color: #096c9b;
+  color: #fff;    
+}
+
+.idribbble {
+  background-color: #6dcbbe;
+     
+}
+.idribbble:hover {
+  background-color: #ef558f;
+  color: #fff;    
+}
+
+
+.article::before, .article::after {
+  content: "";
+  position: absolute;
+  background-color: #219d84;
+  width: 1px;
+  height: 316px;
+  top: 12px;
+}
+
+.article::before {
+  left: -1px;
+}
+
+.article::after {
+  right: -1px;
+  
+}
+
+
+
+
+
+/* .subtitle span {
   display: inline-block;
   width: 50px;
   margin: 10px;
@@ -268,7 +406,7 @@
   left: 1px;
 
   width: 200px;
-}
+} */
 
 
 input:invalid {
@@ -281,22 +419,14 @@ input:invalid {
 .contact-form {
   height: 564px;
 
-  background-color: green;
+  background-color: blue;
 }
 
 .button-submit {
   background: green;
 }
 
-.article {
-  font-size: 2em;
-}
 
-.article .subtitle {
-  font-size: 2rem;
-  font-family: "Courier New", Courier, monospace;
-  color: red;
-}
 
 .copyright {
   height: 63px;

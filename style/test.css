@@ -1,300 +1,48 @@
-.hexagon-cotainer {     
-  height: 721px;
-  outline: 1px solid black;
+
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../assets/fonts/icomoon.eot?h5g0j6');
+  src:  url('../assets/fonts/icomoon.eot?h5g0j6#iefix') format('embedded-opentype'),
+    url('../assets/fonts/icomoon.ttf?h5g0j6') format('truetype'),
+    url('../assets/fonts/icomoon.woff2?h5g0j6') format('woff2'),
+    url('../assets/fonts/icomoon.woff?h5g0j6') format('woff'),
+    url('../assets/fonts/icomoon.svg?h5g0j6#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.hexGrid {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
-  margin: 2% auto;
-  overflow: hidden;
-  font-size: 15px;
-  list-style-type: none;
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-  padding-bottom: 4.4%;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.hex {
-  position: relative;
-  visibility:hidden;
-  outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
-  width: 20%; /* = 100 / 5 */
+.icon-pinterest:before {
+  content: "\e900";
 }
-.hex:nth-child(9n+6){ /* first hexagon of even rows */
-  margin-left:10%;  /* = width of .hex / 2  to indent even rows */
+.icon-google-plus:before {
+  content: "\ea8b";
 }
-
-.hex::after{
-  content:'';
-  display:block;
-  padding-bottom: 86.602%;  /* =  100 / tan(60) * 1.5 */
+.icon-facebook:before {
+  content: "\ea90";
 }
-.hexIn{
-  position: absolute;
-  width:96%;
-  padding-bottom: 110.851%; /* =  width / sin(60) */
-  margin:0 2%;
-  overflow: hidden;
-  visibility: hidden;
-  outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
-  -webkit-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
-      -ms-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
-          transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+.icon-twitter:before {
+  content: "\ea96";
 }
-.hexIn * {
-  position: absolute;
-  visibility: visible;
-  outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+.icon-dribbble:before {
+  content: "\eaa7";
 }
-
-.hex img {
-  left: -100%;
-  right: -100%;
-  width: auto;
-  height: 100%;
-  margin: 0 auto;
-  -webkit-transform: rotate3d(0,0,0,0deg);
-      -ms-transform: rotate3d(0,0,0,0deg);
-          transform: rotate3d(0,0,0,0deg);
-}
-
-
-
-
-
-
-
-<ul class="hexGrid">
-				<li class="hex">
-					<div class="hexIn">
-						<a class="hexLink" href="#">
-							<img src="./assets/images/Portfolio/Layer33.png" alt="" />												
-						</a>
-					</div>
-				</li>
-				<li class="hex">
-					<div class="hexIn">
-						<a class="hexLink" href="#">
-							<img src="https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg" alt="" />
-							<h1>This is a title</h1>
-							<p>Some sample text about the article this hexagon leads to</p>
-						</a>
-					</div>
-				</li>
-				<li class="hex">
-					<div class="hexIn">
-						<a class="hexLink" href="#">
-							<img src="https://farm3.staticflickr.com/2827/10384422264_d9c7299146.jpg" alt="" />
-							<h1>This is a title</h1>
-							<p>Some sample text about the article this hexagon leads to</p>
-						</a>
-					</div>
-				</li>
-				<li class="hex">
-					<div class="hexIn">
-						<a class="hexLink" href="#">
-							<img src="https://farm7.staticflickr.com/6217/6216951796_e50778255c.jpg" alt="" />
-							<h1>This is a title</h1>
-							<p>Some sample text about the article this hexagon leads to</p>
-						</a>
-					</div>
-				</li>
-				<li class="hex">
-					<div class="hexIn">
-						<a class="hexLink" href="#">
-							<img src="https://farm7.staticflickr.com/6083/6055581292_d94c2d90e3.jpg" alt="" />
-							<h1>This is a title</h1>
-							<p>Some sample text about the article this hexagon leads to</p>
-						</a>
-					</div>
-				</li>
-				<li class="hex">
-					<div class="hexIn">
-						<a class="hexLink" href="#">
-							<img src="https://farm3.staticflickr.com/2827/10384422264_d9c7299146.jpg" alt="" />
-							<h1>This is a title</h1>
-							<p>Some sample text about the article this hexagon leads to</p>
-						</a>
-					</div>
-				</li>
-				<li class="hex">
-					<div class="hexIn">
-						<a class="hexLink" href="#">
-							<img src="https://farm8.staticflickr.com/7187/6895047173_d4b1a0d798.jpg" alt="" />
-							<h1>This is a title</h1>
-							<p>Some sample text about the article this hexagon leads to</p>
-						</a>
-					</div>
-				</li>
-				<li class="hex">
-					<div class="hexIn">
-						<a class="hexLink" href="#">
-							<img src="https://farm4.staticflickr.com/3766/12953056854_b8cdf14f21.jpg" alt="" />
-							<h1>This is a title</h1>
-							<p>Some sample text about the article this hexagon leads to</p>
-						</a>
-					</div>
-				</li>
-				<li class="hex">
-					<div class="hexIn">
-						<a class="hexLink" href="#">
-							<img src="https://farm7.staticflickr.com/6139/5986939269_10721b8017.jpg" alt="" />
-							<h1>This is a title</h1>
-							<p>Some sample text about the article this hexagon leads to</p>
-						</a>
-					</div>
-				</li>
-				<li class="hex">
-					<div class="hexIn">
-						<a class="hexLink" href="#">
-							<img src="https://farm4.staticflickr.com/3165/5733278274_2626612c70.jpg" alt="" />
-							<h1>This is a title</h1>
-							<p>Some sample text about the article this hexagon leads to</p>
-						</a>
-					</div>
-				</li>
-				<li class="hex">
-					<div class="hexIn">
-						<a class="hexLink" href="#">
-							<img src="https://farm8.staticflickr.com/7163/6822904141_50277565c3.jpg" alt="" />
-							<h1>This is a title</h1>
-							<p>Some sample text about the article this hexagon leads to</p>
-						</a>
-					</div>
-				</li>
-				<li class="hex">
-					<div class="hexIn">
-						<a class="hexLink" href="#">
-							<img src="https://farm4.staticflickr.com/3771/13199704015_72aa535bd7.jpg" alt="" />
-							<h1>This is a title</h1>
-							<p>Some sample text about the article this hexagon leads to</p>
-						</a>
-					</div>
-				</li>
-				<li class="hex">
-					<div class="hexIn">
-						<a class="hexLink" href="#">
-							<img src="https://farm7.staticflickr.com/6083/6055581292_d94c2d90e3.jpg" alt="" />
-							<h1>This is a title</h1>
-							<p>Some sample text about the article this hexagon leads to</p>
-						</a>
-					</div>
-				</li>
-      </ul>
-      
-
-      
-
-
-.hexGrid {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  /* margin: 2% auto; */
-  overflow: hidden; 
-
-  padding-bottom: 4.4%;
-}
-
-.hex {
-  position: relative;
-  visibility: hidden;
-  outline: 1px solid transparent; /* fix for jagged edges in FF on hover transition */
-  width: 20%; /* = 100 / 5 */ 
-}
-
-.hex:nth-child(9n+1){ /* first hexagon of even rows */
-  margin-left:10%;  /* = width of .hex / 2  to indent even rows */
-}
-
-.hex::after{
-  content: '';
-  display: block;
-  padding-bottom: 86.602%;  /* =  100 / tan(60) * 1.5 */
-}
-
-.hexIn{
-  position: absolute;
-  width:96%;
-  padding-bottom: 110.851%; /* =  width / sin(60) */
-  margin:0 2%;
-  overflow: hidden;
-  visibility: hidden;
-  outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
-  -webkit-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
-      -ms-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
-          transform: rotate3d(0,0,1,-60deg) skewY(30deg);
-}
-.hexIn * {
-  position: absolute;
-  visibility: visible;
-  outline: 1px solid transparent; /* fix for jagged edges in FF on hover transition */
-}
-.hexLink {
-    display:block;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    color: #fff;
-    overflow: hidden;
-    -webkit-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
-        -ms-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
-            transform: skewY(-30deg) rotate3d(0,0,1,60deg);
-}
-
-/*** HEX CONTENT **********************************************************************/
-.hex img {
-  left: -100%;
-  right: -100%;
-  width: auto;
-  height: 100%;
-  margin: 0 auto;
-  -webkit-transform: rotate3d(0,0,0,0deg);
-      -ms-transform: rotate3d(0,0,0,0deg);
-          transform: rotate3d(0,0,0,0deg);
-}
-
-.hex h1, .hex p {
-  width: 100%;
-  padding: 5%;
-  box-sizing:border-box;
-  background-color: rgba(0, 128, 128, 0.8);
-  font-weight: 300;
-  -webkit-transition:  -webkit-transform .2s ease-out, opacity .3s ease-out;
-          transition:          transform .2s ease-out, opacity .3s ease-out;
-}
-.hex h1 {
-  bottom: 50%;
-  padding-top:50%;
-  font-size: 1.5em;
-  z-index: 1;
-  -webkit-transform:translate3d(0,-100%,0);
-      -ms-transform:translate3d(0,-100%,0);
-          transform:translate3d(0,-100%,0);
-}
-.hex h1::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 45%;
-  width: 10%;
-  text-align: center;
-  border-bottom: 1px solid #fff;
-}
-.hex p {
-  top: 50%;
-  padding-bottom:50%;
-  -webkit-transform:translate3d(0,100%,0);
-      -ms-transform:translate3d(0,100%,0);
-          transform:translate3d(0,100%,0);
-}
-
-
-/*** HOVER EFFECT  **********************************************************************/
-.hexLink:hover h1, .hexLink:focus h1,
-.hexLink:hover p, .hexLink:focus p{
-  -webkit-transform:translate3d(0,0,0);
-      -ms-transform:translate3d(0,0,0);
-          transform:translate3d(0,0,0);
+.icon-linkedin2:before {
+  content: "\eaca";
 }
